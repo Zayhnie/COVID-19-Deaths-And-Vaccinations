@@ -2,10 +2,10 @@ Portfolioproject
 Description: 
 These are datasets of confirmed numbers of deaths and vaccinations of COVID-19 
 obtained from
-
 https://ourworldindata.org
 
-google drive link to datasets used a https://drive.google.com/drive/folders/1h20fB2_mxPrW0XFWi2BrykomnpvEoJaJ?usp=sharing
+Google drive link to datasets used
+https://drive.google.com/drive/folders/1h20fB2_mxPrW0XFWi2BrykomnpvEoJaJ?usp=sharing
 
 Task: 
 To find out;
@@ -20,4 +20,4 @@ To find out;
 
 
 Tool:
-MySQL
+MySQL.
