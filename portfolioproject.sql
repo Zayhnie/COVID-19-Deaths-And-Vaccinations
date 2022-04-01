@@ -101,7 +101,7 @@ where continent is not null
 order by 1,2;
 
 -- Looking at Total Cases vs Total Deaths
--- shows the likelihood of dying if you contract covid in Nigeria
+-- shows the likelihood of dying if you contract COVID-19 in Nigeria
 
 select location, dates, total_cases, total_deaths,(total_deaths/total_cases)*100 as DeathPercentage
 from covid_deaths
@@ -110,7 +110,8 @@ and continent is not null
 order by 1,2;
 
 -- looking at the Total Cases VS Population
--- shows what percentage of population got covid in Nigeria
+-- shows what percentage of population got infected with COVID-19 in Nigeria
+
 
 select location, dates, population, total_cases, (total_deaths/population)*100 as PercentPopulationInfected
 from covid_deaths
@@ -154,7 +155,9 @@ select * from covid_vaccinations;
 select * from covid_deaths;
  
  
- -- Looking at total vaccinations vs population
+--- Looking at total vaccinations vs population
+--- Shows Percentage of Population that has recieved at least one Covid Vaccine
+
  
 select * from covid_deaths as dea
 inner join covid_vaccinations as vac
@@ -185,6 +188,7 @@ AND dea.continent IS NOT NULL
 order by 2,3;
 
 --- Using CTE
+--- Using CTE to perform Calculation on Partition By in previous query
 
 with PopvsVac(continent, location, dates, population, new_vaccinations, RollingPeopleVaccinated) as 
 (
@@ -209,6 +213,7 @@ from PopvsVac;
 
 
 --- Temp Table
+--- Using Temp Table to perform Calculation on Partition By in previous query
 
 drop table if exists PercentPopulationVaccinated;
 create table PercentPopulationVaccinated
