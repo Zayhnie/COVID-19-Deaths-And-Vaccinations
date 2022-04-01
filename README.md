@@ -1,6 +1,7 @@
 Portfolioproject
 Description: 
-These are datasets of confirmed numbers of deaths and vaccinations from COVID-19 obtained obtained from
+These are datasets of confirmed numbers of deaths and vaccinations of COVID-19 
+obtained from
 
 https://ourworldindata.org
 
