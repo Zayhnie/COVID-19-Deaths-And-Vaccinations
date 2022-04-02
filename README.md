@@ -110,7 +110,7 @@ and dea.dates = vac.dates;
 ```
 #### Total Vacccinations vs Population For Nigeria
 ##### Shows percentage of Population that has recieved at least one COVID-19 Vaccine in Nigeria
-###### Rolling People Vaccinated shows the daily increment in the number of population that has recieved the COVID-19. 
+###### Rolling People Vaccinated shows the daily increment in the number of population that has recieved the COVID-19 vaccine. 
 ```mysql
 select dea.continent, dea.location, dea.dates, dea.population, vac.new_vaccinations from covid_deaths as dea
 inner join covid_vaccinations as vac
